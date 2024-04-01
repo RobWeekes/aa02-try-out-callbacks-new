@@ -6,7 +6,7 @@ element, index, and array itself. The function does not need to return any value
 Do not use the built in Array.forEach.
 
 Examples:
-
+TEST COMMENT
 myForEach(['a', 'b', 'c'], function (el, i) {
     console.log(el + ' is at index ' + i);
 }); // prints
@@ -22,7 +22,7 @@ console.log(test); // ['LAIKA', 'BELKA']
 *******************************************************************************/
 
 function myForEach(array, cb) {
-    // Your code here 
+    // Your code here
 }
 
 /*****************DO NOT MODIFY ANYTHING UNDER THIS  LINE**********************/
