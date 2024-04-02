@@ -20,8 +20,31 @@ console.log(result2);      // ['choose', 'words', 'only']
 *******************************************************************************/
 
 function myFilter(array, cb) {
-    // Your code here 
+    let newArr = [];
+
+    for(let i = 0; i < array.length; i++) {
+        let value = array[i];
+        console.log(value);
+        if(cb(value) === true) {
+            newArr.push(value);
+            console.log(newArr);
+        }
+    }
+    console.log(newArr);
+    return newArr;
 }
+
+
+let result1 = myFilter([5, 7, 4, 3, 8], function (n) {
+    return n % 2 === 0;
+});
+console.log(result1);       // [ 4, 8 ]
+
+let result2 = myFilter(['choose', 'big', 'words', 'only'], function (s) {
+    return s.length > 3;
+});
+console.log(result2);      // ['choose', 'words', 'only']
+
 
 /*****************DO NOT MODIFY ANYTHING UNDER THIS  LINE**********************/
 try {
